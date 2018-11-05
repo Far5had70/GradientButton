@@ -2,6 +2,9 @@
 
 <img src="https://raw.githubusercontent.com/Far5had70/GradientButton/master/example.jpg" height="480" width="270">
 
+
+<img src="https://raw.githubusercontent.com/Far5had70/GradientButton/master/item.jpg" height="480" width="270">
+
  GradientButton is a custom Button Gradient.
 
 
@@ -47,7 +50,7 @@ Step 2. Add the dependency
 
 ## Demo
 
-You can try it out here [Sample Application](https://github.com/Far5had70/PersianDateRangePicker/blob/master/app/src/main/java/com/shaygan/datepicker/MainActivity.java)
+You can try it out here [Sample Application](https://github.com/Far5had70/GradientButton/blob/master/app/src/main/java/com/farshad/gradientbutton/MainActivity.java)
 
 
 

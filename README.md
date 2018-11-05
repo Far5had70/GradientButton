@@ -1,9 +1,8 @@
-# Persian Date Range Picker
+# Gradient Button
 
-<img src="https://raw.githubusercontent.com/Far5had70/GradientButton/master/example.gif" height="480" width="270">
+<img src="https://raw.githubusercontent.com/Far5had70/GradientButton/master/example.jpg" height="480" width="270">
 
  GradientButton is a custom Button Gradient.
-
 
 
 # Features

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradientButton">
+        <attr name="setText" format="string"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="Radius" format="dimension"/>
+        <attr name="startColor" format="reference"/>
+        <attr name="endColor" format="reference"/>
+        <attr name="textColor" format="color"/>
+        <attr name="typeface" format="string"/>
+    </declare-styleable>
+
+</resources>

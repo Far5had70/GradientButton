@@ -50,7 +50,7 @@ Step 2. Add the dependency
 
 ## Demo
 
-You can try it out here [Sample Application](https://github.com/Far5had70/GradientButton/blob/master/app/src/main/java/com/farshad/gradientbutton/MainActivity.java)
+You can try it out here [Sample Application](https://github.com/Far5had70/GradientButton/blob/master/app/src/main/res/layout/activity_main.xml)
 
 
 

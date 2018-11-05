@@ -14,7 +14,7 @@
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"
         app:Radius="30dp"
-        app:setText="تست"
+        app:setText="Test"
         app:textSize="14sp"
         app:startColor="@color/colorBlue_A400"
         app:endColor="@color/colorBlue_900"

@@ -18,6 +18,8 @@ Radius (background)
 
 TypeFace(directory: Assets/sampleFont.ttf)
 
+Orientation (RIGHT_LEFT , LEFT_RIGHT , BOTTOM_TOP , TOP_BOTTOM)
+
 
 
 

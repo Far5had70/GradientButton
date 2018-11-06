@@ -30,7 +30,7 @@ Add it in your root build.gradle at the end of repositories:
 
 ```gradle
 	dependencies {
-	        implementation 'com.github.Far5had70:GradientButton:1.0.0'
+	        implementation 'com.github.Far5had70:GradientButton:1.1.0'
 	}
 ```
 
@@ -50,7 +50,7 @@ Step 2. Add the dependency
 
 ## Demo
 
-You can try it out here [Sample Application](https://github.com/Far5had70/GradientButton/blob/master/app/src/main/res/layout/activity_main.xml)
+You can try it out here [Sample View](https://github.com/Far5had70/GradientButton/blob/master/app/src/main/res/layout/activity_main.xml)
 
 
 
@@ -62,7 +62,7 @@ You can try it out here [Sample Application](https://github.com/Far5had70/Gradie
 **Example:**
 
 ```xml
-        <com.waspar.gradientbutton.GradientButton
+<com.waspar.gradientbutton.GradientButton
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
@@ -74,6 +74,7 @@ You can try it out here [Sample Application](https://github.com/Far5had70/Gradie
         app:startColor="@color/colorBlue_A400"
         app:endColor="@color/colorBlue_900"
         app:textColor="#fff"
+        app:orientation="right_left"
         />
 ```
 

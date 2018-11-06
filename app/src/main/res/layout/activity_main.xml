@@ -19,6 +19,7 @@
         app:startColor="@color/colorBlue_A400"
         app:endColor="@color/colorBlue_900"
         app:textColor="#fff"
+        app:orientation="right_left"
         />
 
 </RelativeLayout>

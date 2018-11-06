@@ -16,6 +16,11 @@ public class GradientButton extends FrameLayout {
     private TextView textView;
     private View root;
 
+    public static int RIGHT_LEFT = 1;
+    public static int LEFT_RIGHT = 2;
+    public static int BOTTOM_TOP = 3;
+    public static int TOP_BOTTOM = 4;
+
     public GradientButton(@NonNull Context context) {
         super(context);
         initView();
@@ -23,7 +28,7 @@ public class GradientButton extends FrameLayout {
 
     public GradientButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initView(context , attrs);
+        initView(context, attrs);
     }
 
     public GradientButton(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -61,21 +66,23 @@ public class GradientButton extends FrameLayout {
                 mEndColor = context.getResources().getColor(mEndColor);
             }
 
+            int orientation = ta.getInteger(R.styleable.GradientButton_orientation, 1);
+
             String Font = ta.getString(R.styleable.GradientButton_typeface);
 
-            if (Font != null){
-                setFont(context , Font);
+            if (Font != null) {
+                setFont(context, Font);
             }
 
             ColorStateList color = ta.getColorStateList(R.styleable.GradientButton_textColor);
 
-            setRadius(Radius*2 , mStartColor , mEndColor);
+            setRadius(Radius * 2, mStartColor, mEndColor, orientation);
 
             setText(Text);
 
-            setTextSize((float) (textSize*0.4));
+            setTextSize((float) (textSize * 0.4));
 
-            if (color != null){
+            if (color != null) {
                 setTextColor(color);
             }
 
@@ -87,12 +94,12 @@ public class GradientButton extends FrameLayout {
         addView(view);
     }
 
-    public void setFont(Context context , String font) {
-        textView.setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/"+font));
+    public void setFont(Context context, String font) {
+        textView.setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/" + font));
     }
 
-    public void setTextColor(ColorStateList color){
-        if (color != null){
+    public void setTextColor(ColorStateList color) {
+        if (color != null) {
             textView.setTextColor(color);
         }
     }
@@ -105,9 +112,29 @@ public class GradientButton extends FrameLayout {
         textView.setText(Text);
     }
 
-    public void setRadius(float Radius , int start , int end) {
-        GradientDrawable drawable = new GradientDrawable(GradientDrawable.Orientation.RIGHT_LEFT, new int[] {start, end });
-        drawable.setCornerRadii(new float[] { Radius, Radius, Radius, Radius, Radius, Radius, Radius, Radius });
+    public void setRadius(float Radius, int start, int end, int Orientation) {
+
+        GradientDrawable.Orientation orientation = null;
+
+        switch (Orientation) {
+            case 1:
+                orientation = GradientDrawable.Orientation.RIGHT_LEFT;
+                break;
+            case 2:
+                orientation = GradientDrawable.Orientation.LEFT_RIGHT;
+                break;
+            case 3:
+                orientation = GradientDrawable.Orientation.BOTTOM_TOP;
+                break;
+            case 4:
+                orientation = GradientDrawable.Orientation.TOP_BOTTOM;
+                break;
+            default:
+                orientation = GradientDrawable.Orientation.RIGHT_LEFT;
+        }
+
+        GradientDrawable drawable = new GradientDrawable(orientation, new int[]{start, end});
+        drawable.setCornerRadii(new float[]{Radius, Radius, Radius, Radius, Radius, Radius, Radius, Radius});
         root.setBackground(drawable);
     }
 }

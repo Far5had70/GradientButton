@@ -8,6 +8,14 @@
         <attr name="endColor" format="reference"/>
         <attr name="textColor" format="color"/>
         <attr name="typeface" format="string"/>
+        <attr name="orientation"/>
     </declare-styleable>
+
+    <attr name="orientation">
+        <flag name="right_left" value="1" />
+        <flag name="left_right" value="2" />
+        <flag name="bottom_top" value="3" />
+        <flag name="top_bottom" value="4" />
+    </attr>
 
 </resources>
